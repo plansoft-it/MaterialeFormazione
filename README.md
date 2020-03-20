@@ -4,17 +4,17 @@
   - [Teoria](#teoria)
     - [OOP](#oop)
     - [MVC](#mvc)
-    - [RESTfull programming](#restfull-programming)
+    - [RESTful programming](#restful-programming)
   - [Strumenti gestione](#strumenti-gestione)
     - [Git](#git)
-  - [Backend](#backend)
+  - [Back-end](#back-end)
     - [Linguaggi](#linguaggi)
     - [Tools](#tools)
     - [Framework](#framework)
       - [Spring](#spring)
   - [Database](#database)
     - [Linguaggi](#linguaggi-1)
-  - [Frontend](#frontend)
+  - [Front-end](#front-end)
     - [Linguaggi](#linguaggi-2)
     - [Tools](#tools-1)
     - [Framework](#framework-1)
@@ -36,7 +36,7 @@ Il pattern architetturale per lo sviluppo web che consente di suddividere logica
 * https://it.wikipedia.org/wiki/Model-view-controller 
 * https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
 
-### RESTfull programming
+### RESTful programming
 
 Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un protocollo con cui i messaggi vengono trasferiti. Nel caso delle web app, il canale di comunicazione è internet e il protocollo usato è REST. Questo protocollo comunemente sfrutta un formato chiamato JSON.
 
@@ -63,7 +63,7 @@ Collaborare nella programmazione è fondamentale, per farlo vengono usati dei si
 
 ---
 
-## Backend
+## Back-end
 
 Il core di un software è senza alcun dubbio la parte che si mette in mezzo tra il lato client e il database, stiamo parlando di backend. In questo livello si trova l'effettiva implementazione delle logiche di business di un applicativo.
 
@@ -108,7 +108,24 @@ Youtube playlist video:
 
 ## Database
 
+La persistenza dei dati in un applicativo, non solo web, è fondamentale. Per mantenere i dati si usano dei database, nel nostro caso principalmente vengono usati i tipi relazionali.
+
+https://it.wikipedia.org/wiki/Modello_relazionale
+
+Le operazioni che possono essere fatte in un database sono 4 e sono definite CRUD: creazione (**C**reate), lettura (**R**ead), aggiornamento (**U**pdate) e cancellazione (**D**elete).
+
+https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+
+Da notare l'associazione alle chiamate di tipo REST:
+
+  * Create --> Post
+  * Read --> Get
+  * Update --> Put
+  * Delete --> Delete
+
 ### Linguaggi
+
+Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
 
 * SQL:
 
@@ -117,8 +134,9 @@ Youtube playlist video:
 
 ---
 
-## Frontend
-Tutto ciò che l'utente vede viene generalmente indicato con frontend, 
+## Front-end
+
+Tutto ciò che l'utente vede viene generalmente indicato con front-end, questa parola racchiude in se la visualizzazione dei dati che richiediamo al back-end.
 
 ### Linguaggi
 
