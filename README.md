@@ -5,6 +5,10 @@
     - [OOP](#oop)
     - [MVC](#mvc)
     - [RESTful programming](#restful-programming)
+      - [JSON:](#json)
+        - [Da sapere](#da-sapere)
+        - [Esercizi](#esercizi)
+      - [REST API:](#rest-api)
   - [Strumenti gestione](#strumenti-gestione)
     - [Git](#git)
   - [Back-end](#back-end)
@@ -33,21 +37,84 @@ Il paradigma di programmazione più comune, serve a comprendere la logica di svi
 
 Il pattern architetturale per lo sviluppo web che consente di suddividere logicamente i componenti di una applicazione.
 
-* https://it.wikipedia.org/wiki/Model-view-controller 
-* https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
+* [Wikipedia](https://it.wikipedia.org/wiki/Model-view-controller)
+* [MVC framework intro](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
+
+
 
 ### RESTful programming
 
-Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un protocollo con cui i messaggi vengono trasferiti. Nel caso delle web app, il canale di comunicazione è internet e il protocollo usato è REST. Questo protocollo comunemente sfrutta un formato chiamato JSON.
+Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un protocollo con cui i messaggi vengono trasferiti. Nel caso delle web app, il canale di comunicazione è internet e il protocollo usato è HTTP. Per scambiare messaggi attraverso questo canale è anche necessario definire il sistema di trasmissione e il linguaggio/formato del messaggio, nel nostro caso useremo il sistema REST e il formato JSON.
 
-JSON:
+#### JSON:
 
-* https://www.w3schools.com/whatis/whatis_json.asp
+* [What Is Json](https://www.w3schools.com/whatis/whatis_json.asp)
+* [Spiegazione della struttura](https://json.org/json-it.html)
 
-REST API:
+##### Da sapere
 
-* https://it.wikipedia.org/wiki/Representational_State_Transfer
-* https://www.youtube.com/watch?v=7YcW25PHnAA
+* Syntax rules
+* JSON name value
+* JSON Object
+* JSON Arrays
+
+##### Esercizi
+
+1. Costruire un JSON che contenga:
+    * Una lista di 2 record
+    * Ogni record rappresenta un oggetto persona con un nome, un cognome e una lista di competenze
+    * Una competenza è un oggetto con una stringa che indica il nome della competenza
+    
+    Esempio: Mario Rossi ha competenze in Java e Spring e Maria Bianchi in Javascript e Angular.
+    
+    <details><summary>Soluzione</summary>
+    
+    ```JSON
+    [
+      {
+        "Nome" :"Mario",
+        "Cognome" :"Rossi",
+        "Competenze" :[
+          {
+            "Nome" :"Java"
+          },
+          {
+            "Nome" :"Spring"
+          }
+        ]
+      },
+      {
+        "Nome" :"Maria",
+        "Cognome" :"Bianchi",
+        "Competenze" :[
+          {
+            "Nome" :"Javascript"
+          },
+          {
+            "Nome" :"Angular"
+          }
+        ]
+      },
+    ]
+    ```
+    </details>
+
+2. Accedere alla prima competenza della seconda persona considerando che la lista sia dell'oggetto creato nell'esercizio 1 sia definita ***persons***.
+
+    <details><summary>Soluzione</summary>
+    
+    ```
+    persons[1][Competenze][0]
+    ```
+    
+    </details>
+
+#### REST API:
+
+* [Wikipedia](https://it.wikipedia.org/wiki/Representational_State_Transfer)
+* [Youtube - REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
+
+***Consiglio: il video youtube spiega molto bene e da una panoramica sul funzionamento di questo sistema architetturale.***
 
 ---
 
@@ -79,6 +146,8 @@ Linguaggio comunemente usato sia nelle software house che in ambiente accademico
 
   * https://www.tutorialspoint.com/java/index.htm
   * https://www.hackerrank.com/domains/java
+
+
 
 ### Tools
 
