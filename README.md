@@ -28,7 +28,14 @@
         - [Esercizi](#esercizi-2)
   - [Front-end](#front-end)
     - [Linguaggi](#linguaggi-2)
+      - [HTML](#html)
+      - [CSS/Sass](#csssass)
+      - [JavaScript](#javascript)
+        - [Esercizi](#esercizi-3)
+      - [Typescript](#typescript)
     - [Tools](#tools-1)
+      - [Node.js](#nodejs)
+      - [Npm](#npm)
     - [Framework](#framework-1)
 
 </details>
@@ -176,9 +183,11 @@ Sicuramente lo stack più comunemente usato per la parte server di una web appli
 
 Linguaggio comunemente usato sia nelle software house che in ambiente accademico, molto flessibile e allo stesso tempo solido. Grazie alla Java Virtual Machine su cui viene eseguito è indipendente dall'hardware su cui viene eseguito.
 
+Si consiglia Java almeno alla versione 9.
+
 * Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=grEKMHGYyns), [2](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)) o piattaforme come udemy o cursera
 * Una guida online su [codecademy](https://www.codecademy.com/learn/learn-java/) o [learn x in y minutes](https://learnxinyminutes.com/docs/it-it/java-it/)
-* Libri
+* Libri 
 
 <details><summary>Da sapere</summary>
 
@@ -206,12 +215,13 @@ Linguaggio comunemente usato sia nelle software house che in ambiente accademico
   * java.lang
   * java.util
 * Annotazioni
-* Lambda Expressions
+* Lambda Expressions - ([Libro](https://www.oreilly.com/programming/free/files/introducing-java-8.pdf))
+* Streams - [Guida online](https://www.baeldung.com/java-8-streams)
 </details>
 
 ##### Esercizi
 
-* [hackerrank](https://www.hackerrank.com/domains/java)
+* [Hackerrank](https://www.hackerrank.com/domains/java)
 * [Open Kattis](https://open.kattis.com/problems)
 
 ***Consiglio: il problem solving è molto importante quindi fare tanti esercizi.***
@@ -235,9 +245,9 @@ Ci sono diverse guide in giro per il web (youtube, udemy, cursera), ma anche que
   * [Rest service](https://spring.io/guides/gs/rest-service/)
   * [Consuming Rest](https://spring.io/guides/gs/consuming-rest/)
   * [Maven](https://spring.io/guides/gs/maven/)
-  * [Actuator service](https://spring.io/guides/gs/actuator-service/)
 
 * [Youtube playlist video](https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x)
+* [Free ebook](https://www.packtpub.com/free-ebooks/application-development/software-architecture-spring-50/9781788992992)
 
 ***Consiglio: la guida youtube è fatta molto bene e c'è tutto quello che dovete sapere.***
 
@@ -267,10 +277,14 @@ Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
 #### SQL
 
 * [Sintassi](https://www.1keydata.com/it/sql/sintassi-sql.php)
+* [SQLBook](https://goalkicker.com/SQLBook/)
+* [SQLBook 2](https://www.syncfusion.com/ebooks/sql_queries_succinctly)
 
 ##### Esercizi
 
-* [hackerrank](https://www.hackerrank.com/domains/sql)
+* [Hackerrank](https://www.hackerrank.com/domains/sql)
+
+***Consiglio: Un'occhiata alla sintassi e poi esercizi su hackerrank.***
 
 ---
 
@@ -278,15 +292,81 @@ Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
 
 Tutto ciò che l'utente vede viene generalmente indicato con front-end, questa parola racchiude in se la visualizzazione dei dati che richiediamo al back-end.
 
+* [Wikipedia](https://it.wikipedia.org/wiki/Front-end_e_back-end)
+
 ### Linguaggi
 
-* HTML: https://www.w3schools.com/html/
+#### HTML
 
-* Javascript: https://www.sololearn.com/Course/JavaScript/
+Questo è un linguaggio di tipo merkup (non è un linguaggio quindi di programmazione), serve per visualizzare graficamente contenuti testuali e non.
+
+* [learn X in Y minutes](https://learnxinyminutes.com/docs/html/)
+* [Mozilla developer](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [W3School](https://www.w3schools.com/html/)
+
+<details><summary>Da sapere</summary>
+
+* Struttura di un documento HTML
+* Gli elementi body e head
+* Headings
+* Links
+* Immagini
+* Array
+* Bottoni
+* Liste
+* Gli attributi dei tag
+* Line Break
+
+</details>
+
+***Consiglio: non importa andare molto a fondo in questo linguaggio, conoscere la sua sintassi e i tag base è sufficiente. Se volete avere una lista di tutti i tag potete trovarla qui: [w3schools](https://www.w3schools.com/tags/default.asp).***
+
+#### CSS/Sass
+
+Per definire la formattazione di un documento HTML è necessario un ulteriore tipologia di linguaggi chiamati fogli stile. Inizialmente sono nati i CSS introdotti per separare le pagine HTML dalla loro formattazione.
+
+* [MarkSheet - free HTML CSS tutorial](https://marksheet.io/)
+* [CSS Cheat sheet](https://websitesetup.org/css3-cheat-sheet/)
+
+Attualmente al posto di scrivere fogli stile classici in formato css, si preferisce passare da un linguaggio di preprocessing chiamato Sass. Questo linguaggio permette di rendere più efficienti, leggibili e mantenibili i fogli stile che scriviamo. Sass può interpretare 2 sintassi: la sintassi Sass e la sintassi SCSS (Sassy CSS).
+
+* [Sass](https://sass-lang.com/guide)
+
+***Consiglio: non perdere tanto tempo sui fogli stile.***
+
+#### JavaScript
+
+Probabilmente il linguaggio attualmente più usato al mondo, Javascript è comunemente usato per la programmazione lato web client trasformando le pagine statiche in dinamiche.
+
+* Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=PkZNo7MFNFg), [2](https://www.youtube.com/playlist?list=PLYrQFCVhfFIvLARCdl9q5WyPnfRBX4rUT)) o piattaforme come udemy o cursera, ma anche [solo learn](https://www.sololearn.com/Course/JavaScript/)
+* Una guida online su [developer mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [JavaScript for Cats](http://jsforcats.com/)
+* Libri 
+
+##### Esercizi
+
+* [javascript-challenges-book](https://tcorral.github.io/javascript-challenges-book/autoexecute/README.html)
+* [Hackerrank](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript)
+
+***Consiglio: ci sono molte curiosità interessanti attorno a questo linguaggio, a partire dal fatto che il linguaggio è stato pensato definito e creato nella sua prima versione in 9 giorni, fino al perchè gli sia stato affidato questo nome nonostante non ci siano grandi somiglianze.***
+
+#### Typescript
+
+TypeScript permette di non soffrire dal passaggio da linguaggi di programmazione orientati agli oggetti a JavaScript in cui sono assenti i tipi. TypeScript è di per se un'estensione di JavaScript e qualsiasi script JavaScript è anche codice TypeScript valido.
+
+* [Guida ufficiale ](https://www.typescriptlang.org/docs/home.html)
+* [Guida in italiano - non completa](https://github.com/Wabri/LearningTypescript/blob/master/README.md)
 
 ### Tools
 
-* nodejs: https://nodejs.org/en/
+#### Node.js
+
+È un esecutore Javascript al di fuori di un qualsiasi web browser che supporta il linguaggio. Questo permette di sviluppare strumenti per la linea di comando oppure può essere usato anche come linguaggio di scripting a livello server.
+
+* [Web site](https://nodejs.org/)
+
+***Consiglio: installate la versione LTS.***
+
+#### Npm
 
 ### Framework
 
