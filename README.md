@@ -1,18 +1,24 @@
 # Materiale Formazione
 
+<details><summary>Indice</summary>
+
 - [Materiale Formazione](#materiale-formazione)
   - [Teoria](#teoria)
     - [OOP](#oop)
+      - [Da sapere](#da-sapere)
     - [MVC](#mvc)
+      - [Da sapere](#da-sapere-1)
     - [RESTful programming](#restful-programming)
-      - [JSON:](#json)
-        - [Da sapere](#da-sapere)
+      - [JSON](#json)
+        - [Da sapere](#da-sapere-2)
         - [Esercizi](#esercizi)
-      - [REST API:](#rest-api)
+      - [REST API](#rest-api)
   - [Strumenti gestione](#strumenti-gestione)
     - [Git](#git)
   - [Back-end](#back-end)
     - [Linguaggi](#linguaggi)
+      - [Da sapere](#da-sapere-3)
+      - [Esercizi](#esercizi-1)
     - [Tools](#tools)
     - [Framework](#framework)
       - [Spring](#spring)
@@ -22,6 +28,8 @@
     - [Linguaggi](#linguaggi-2)
     - [Tools](#tools-1)
     - [Framework](#framework-1)
+
+</details>
 
 ---
 
@@ -33,6 +41,23 @@ Il paradigma di programmazione più comune, serve a comprendere la logica di svi
 
 * https://en.wikipedia.org/wiki/Object-oriented_programming
 
+#### Da sapere
+
+* <details><summary>Elementi atomici del OOP</summary>
+
+    * Oggetti
+    * Classi
+
+    </details>
+
+* <details><summary>Proprietà</summary>
+
+    *  encapsulation
+    *  composition, inheritance, and delegation
+    *  polymorphism
+
+  </details>
+
 ### MVC
 
 Il pattern architetturale per lo sviluppo web che consente di suddividere logicamente i componenti di una applicazione.
@@ -40,13 +65,16 @@ Il pattern architetturale per lo sviluppo web che consente di suddividere logica
 * [Wikipedia](https://it.wikipedia.org/wiki/Model-view-controller)
 * [MVC framework intro](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
 
+#### Da sapere
 
+* Componenti logici
+* Composizione della struttura (chi comunica con chi e come)
 
 ### RESTful programming
 
 Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un protocollo con cui i messaggi vengono trasferiti. Nel caso delle web app, il canale di comunicazione è internet e il protocollo usato è HTTP. Per scambiare messaggi attraverso questo canale è anche necessario definire il sistema di trasmissione e il linguaggio/formato del messaggio, nel nostro caso useremo il sistema REST e il formato JSON.
 
-#### JSON:
+#### JSON
 
 * [What Is Json](https://www.w3schools.com/whatis/whatis_json.asp)
 * [Spiegazione della struttura](https://json.org/json-it.html)
@@ -102,14 +130,14 @@ Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un
 2. Accedere alla prima competenza della seconda persona considerando che la lista sia dell'oggetto creato nell'esercizio 1 sia definita ***persons***.
 
     <details><summary>Soluzione</summary>
-    
+
     ```
     persons[1][Competenze][0]
     ```
-    
+
     </details>
 
-#### REST API:
+#### REST API
 
 * [Wikipedia](https://it.wikipedia.org/wiki/Representational_State_Transfer)
 * [Youtube - REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
@@ -124,9 +152,11 @@ Per far comunicare 2 sistemi è necessario di un canale di comunicazione e di un
 
 Collaborare nella programmazione è fondamentale, per farlo vengono usati dei sistemi chiamati version control system. 
 
-* https://slides.com/gabrielepuliti/git-gitflow
-* https://rogerdudler.github.io/git-guide/index.it.html
-* https://git-scm.com/book/en/v2
+* [Slides prima lezione git](https://slides.com/gabrielepuliti/git-gitflow)
+* [Mini guida per iniziare](https://rogerdudler.github.io/git-guide/index.it.html)
+* [ProGit - la guida ufficiale](https://git-scm.com/book/en/v2)
+
+***Consiglio: se siete impazienti la mini guida è la via migliore, se volte entrare nello specifico potete usare sia le slides per avere anche degli esempi pratici altrimenti c'è la guida completa ufficiale.***
 
 ---
 
@@ -134,9 +164,9 @@ Collaborare nella programmazione è fondamentale, per farlo vengono usati dei si
 
 Il core di un software è senza alcun dubbio la parte che si mette in mezzo tra il lato client e il database, stiamo parlando di backend. In questo livello si trova l'effettiva implementazione delle logiche di business di un applicativo.
 
-https://it.wikipedia.org/wiki/Front-end_e_back-end
+* [Wikipedia](https://it.wikipedia.org/wiki/Front-end_e_back-end)
 
-Sicuramente lo stack più comunemente usato per la parte server di una web application è java/spring/maven
+Sicuramente lo stack più comunemente usato per la parte server di una web application è java/spring/maven.
 
 ### Linguaggi
 
@@ -144,16 +174,48 @@ Linguaggio comunemente usato sia nelle software house che in ambiente accademico
 
 * Java: 
 
-  * https://www.tutorialspoint.com/java/index.htm
-  * https://www.hackerrank.com/domains/java
+  * Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=grEKMHGYyns), [2](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)) o piattaforme come udemy o cursera
+  * Una guida online su [codecademy](https://www.codecademy.com/learn/learn-java/) o [learn x in y minutes](https://learnxinyminutes.com/docs/it-it/java-it/)
+  * Libri
 
+#### Da sapere
 
+* I tipi primitivi
+* Dichiarazione di una variabile
+* Definire una classe
+* Dichiarare un metodo e invocarlo
+* Il costruttore di una classe
+* Array
+* Package e import
+* Gli operatori base (somma, prodotto, etc.etc.)
+* If Else
+* Operatore ternario
+* Switch
+* For, While
+* Incapsulamento: utilizzo del *this*
+* Modificatori d'accesso (public, protected, private)
+* Modificatore static, final, abstract
+* Ereditarietà (super)
+* Polimorfismo (Override, Overload, implements, extends)
+* Eccezioni, errori ed asserzioni
+* Enumerazioni
+* Generics e Wildcards
+* Librerie importanti: 
+  * java.lang
+  * java.util
+* Annotazioni
+* Lambda Expressions
+
+#### Esercizi
+
+* [hackerrank](https://www.hackerrank.com/domains/java)
+* [Open Kattis](https://open.kattis.com/problems)
 
 ### Tools
 
 In progetti abbastanza complessi e grandi è necessario avere uno strumento che consenta la gestione delle dipendenze e delle build. Maven è il più famoso e sicuramente uno dei più difficili da comprendere a pieno.
 
-* Maven: https://maven.apache.org/
+* [Maven](https://maven.apache.org/)
 
 ### Framework
 
