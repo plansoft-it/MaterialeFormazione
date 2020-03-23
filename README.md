@@ -17,13 +17,15 @@
     - [Git](#git)
   - [Back-end](#back-end)
     - [Linguaggi](#linguaggi)
-      - [Da sapere](#da-sapere-3)
-      - [Esercizi](#esercizi-1)
+      - [Java](#java)
+        - [Esercizi](#esercizi-1)
     - [Tools](#tools)
     - [Framework](#framework)
       - [Spring](#spring)
   - [Database](#database)
     - [Linguaggi](#linguaggi-1)
+      - [SQL](#sql)
+        - [Esercizi](#esercizi-2)
   - [Front-end](#front-end)
     - [Linguaggi](#linguaggi-2)
     - [Tools](#tools-1)
@@ -39,7 +41,7 @@
 
 Il paradigma di programmazione più comune, serve a comprendere la logica di sviluppo di applicazioni complesse.
 
-* https://en.wikipedia.org/wiki/Object-oriented_programming
+[OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)
 
 #### Da sapere
 
@@ -156,7 +158,7 @@ Collaborare nella programmazione è fondamentale, per farlo vengono usati dei si
 * [Mini guida per iniziare](https://rogerdudler.github.io/git-guide/index.it.html)
 * [ProGit - la guida ufficiale](https://git-scm.com/book/en/v2)
 
-***Consiglio: se siete impazienti la mini guida è la via migliore, se volte entrare nello specifico potete usare sia le slides per avere anche degli esempi pratici altrimenti c'è la guida completa ufficiale.***
+***Consiglio: se siete impazienti la mini guida è la via migliore, se volete entrare nello specifico potete usare le slides per avere anche degli esempi pratici altrimenti c'è la guida completa ufficiale.***
 
 ---
 
@@ -170,15 +172,15 @@ Sicuramente lo stack più comunemente usato per la parte server di una web appli
 
 ### Linguaggi
 
+#### Java 
+
 Linguaggio comunemente usato sia nelle software house che in ambiente accademico, molto flessibile e allo stesso tempo solido. Grazie alla Java Virtual Machine su cui viene eseguito è indipendente dall'hardware su cui viene eseguito.
 
-* Java: 
+* Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=grEKMHGYyns), [2](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)) o piattaforme come udemy o cursera
+* Una guida online su [codecademy](https://www.codecademy.com/learn/learn-java/) o [learn x in y minutes](https://learnxinyminutes.com/docs/it-it/java-it/)
+* Libri
 
-  * Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=grEKMHGYyns), [2](https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19)) o piattaforme come udemy o cursera
-  * Una guida online su [codecademy](https://www.codecademy.com/learn/learn-java/) o [learn x in y minutes](https://learnxinyminutes.com/docs/it-it/java-it/)
-  * Libri
-
-#### Da sapere
+<details><summary>Da sapere</summary>
 
 * I tipi primitivi
 * Dichiarazione di una variabile
@@ -205,11 +207,14 @@ Linguaggio comunemente usato sia nelle software house che in ambiente accademico
   * java.util
 * Annotazioni
 * Lambda Expressions
+</details>
 
-#### Esercizi
+##### Esercizi
 
 * [hackerrank](https://www.hackerrank.com/domains/java)
 * [Open Kattis](https://open.kattis.com/problems)
+
+***Consiglio: il problem solving è molto importante quindi fare tanti esercizi.***
 
 ### Tools
 
@@ -223,17 +228,18 @@ In progetti abbastanza complessi e grandi è necessario avere uno strumento che 
 
 Difficilmente le cose si fanno da zero, per questo esistono i framework, perchè creare qualcosa da zero è a volte troppo complesso soprattutto per creare qualcosa multi materia. Spring è sicuramente il framework più completo per java grazie a spring core e spring boot.
 
+Ci sono diverse guide in giro per il web (youtube, udemy, cursera), ma anche quelle sul sito ufficiale sono fatte molto bene.
 
-guida ufficiale: https://spring.io/guides:
+* [Guida ufficiale](https://spring.io/guides):
 
-  * https://spring.io/guides/gs/rest-service/
-  * https://spring.io/guides/gs/consuming-rest/
-  * https://spring.io/guides/gs/maven/
-  * https://spring.io/guides/gs/actuator-service/
+  * [Rest service](https://spring.io/guides/gs/rest-service/)
+  * [Consuming Rest](https://spring.io/guides/gs/consuming-rest/)
+  * [Maven](https://spring.io/guides/gs/maven/)
+  * [Actuator service](https://spring.io/guides/gs/actuator-service/)
 
-Youtube playlist video:
+* [Youtube playlist video](https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x)
 
-  * https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x
+***Consiglio: la guida youtube è fatta molto bene e c'è tutto quello che dovete sapere.***
 
 ---
 
@@ -241,11 +247,11 @@ Youtube playlist video:
 
 La persistenza dei dati in un applicativo, non solo web, è fondamentale. Per mantenere i dati si usano dei database, nel nostro caso principalmente vengono usati i tipi relazionali.
 
-https://it.wikipedia.org/wiki/Modello_relazionale
+[Modello relazionale](https://it.wikipedia.org/wiki/Modello_relazionale)
 
 Le operazioni che possono essere fatte in un database sono 4 e sono definite CRUD: creazione (**C**reate), lettura (**R**ead), aggiornamento (**U**pdate) e cancellazione (**D**elete).
 
-https://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
 Da notare l'associazione alle chiamate di tipo REST:
 
@@ -258,10 +264,13 @@ Da notare l'associazione alle chiamate di tipo REST:
 
 Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
 
-* SQL:
+#### SQL
 
-  *  https://www.1keydata.com/it/sql/sintassi-sql.php
-  *  https://www.hackerrank.com/domains/sql
+* [Sintassi](https://www.1keydata.com/it/sql/sintassi-sql.php)
+
+##### Esercizi
+
+* [hackerrank](https://www.hackerrank.com/domains/sql)
 
 ---
 
