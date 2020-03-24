@@ -15,19 +15,20 @@
       - [REST API](#rest-api)
   - [Strumenti gestione](#strumenti-gestione)
     - [Git](#git)
-  - [Back-end](#back-end)
+  - [Database](#database)
     - [Linguaggi](#linguaggi)
-      - [Java](#java)
+      - [SQL](#sql)
         - [Esercizi](#esercizi-1)
     - [Tools](#tools)
-    - [Framework](#framework)
-      - [Spring](#spring)
-  - [Database](#database)
+      - [Liquibase](#liquibase)
+  - [Back-end](#back-end)
     - [Linguaggi](#linguaggi-1)
-      - [SQL](#sql)
+      - [Java](#java)
         - [Esercizi](#esercizi-2)
     - [Tools](#tools-1)
-      - [Liquibase](#liquibase)
+    - [Framework](#framework)
+      - [Spring](#spring)
+      - [Hibernate](#hibernate)
   - [Front-end](#front-end)
     - [Linguaggi](#linguaggi-2)
       - [HTML](#html)
@@ -173,6 +174,51 @@ Collaborare nella programmazione è fondamentale, per farlo vengono usati dei si
 
 ---
 
+## Database
+
+La persistenza dei dati in un applicativo, non solo web, è fondamentale. Per mantenere i dati si usano dei database, nel nostro caso principalmente vengono usati i tipi relazionali.
+
+[Modello relazionale](https://it.wikipedia.org/wiki/Modello_relazionale)
+
+Le operazioni che possono essere fatte in un database sono 4 e sono definite CRUD: creazione (**C**reate), lettura (**R**ead), aggiornamento (**U**pdate) e cancellazione (**D**elete).
+
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+
+Da notare l'associazione alle chiamate di tipo REST:
+
+  * Create --> Post
+  * Read --> Get
+  * Update --> Put
+  * Delete --> Delete
+
+### Linguaggi
+
+Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
+
+#### SQL
+
+* [Sintassi](https://www.1keydata.com/it/sql/sintassi-sql.php)
+* [SQLBook](https://goalkicker.com/SQLBook/)
+* [SQLBook 2](https://www.syncfusion.com/ebooks/sql_queries_succinctly)
+
+##### Esercizi
+
+* [Hackerrank](https://www.hackerrank.com/domains/sql)
+
+***Consiglio: Un'occhiata alla sintassi e poi esercizi su hackerrank.***
+
+### Tools
+
+#### Liquibase
+
+Mantenere il database riproducibile e versionabile è sempre stato uno dei più grandi problemi di sempre, questo strumento risolve il problema.
+
+[Liquibase - get started](https://www.liquibase.org/get_started/how-lb-works.html)
+
+***Consiglio: l'importante è sapere che esiste e come funziona.***
+
+---
+
 ## Back-end
 
 Il core di un software è senza alcun dubbio la parte che si mette in mezzo tra il lato client e il database, stiamo parlando di backend. In questo livello si trova l'effettiva implementazione delle logiche di business di un applicativo.
@@ -249,56 +295,22 @@ Ci sono diverse guide in giro per il web (youtube, udemy, cursera), ma anche que
   * [Rest service](https://spring.io/guides/gs/rest-service/)
   * [Consuming Rest](https://spring.io/guides/gs/consuming-rest/)
   * [Maven](https://spring.io/guides/gs/maven/)
+  * [Accessing data jpa](https://spring.io/guides/gs/accessing-data-jpa/)
+  * [Accessing data rest](https://spring.io/guides/gs/accessing-data-rest/)
+  * [Accessing data mysql](https://spring.io/guides/gs/accessing-data-mysql/)
+  * [Building Rest Services](https://spring.io/guides/tutorials/bookmarks/) <- importante
 
 * [Youtube playlist video](https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x)
 * [Free ebook](https://www.packtpub.com/free-ebooks/application-development/software-architecture-spring-50/9781788992992)
 
-***Consiglio: la guida youtube è fatta molto bene e c'è tutto quello che dovete sapere.***
+***Consiglio: La guida ufficiale è fatta molto bene. Da saper bene soprattutto la guida su come creare servizi rest completi.***
 
----
+#### Hibernate
 
-## Database
+Questa libreria permette di interfacciarsi con i dati persistenti in un database, condizione necessaria per avere una web app usufruibile.
 
-La persistenza dei dati in un applicativo, non solo web, è fondamentale. Per mantenere i dati si usano dei database, nel nostro caso principalmente vengono usati i tipi relazionali.
-
-[Modello relazionale](https://it.wikipedia.org/wiki/Modello_relazionale)
-
-Le operazioni che possono essere fatte in un database sono 4 e sono definite CRUD: creazione (**C**reate), lettura (**R**ead), aggiornamento (**U**pdate) e cancellazione (**D**elete).
-
-[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
-
-Da notare l'associazione alle chiamate di tipo REST:
-
-  * Create --> Post
-  * Read --> Get
-  * Update --> Put
-  * Delete --> Delete
-
-### Linguaggi
-
-Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
-
-#### SQL
-
-* [Sintassi](https://www.1keydata.com/it/sql/sintassi-sql.php)
-* [SQLBook](https://goalkicker.com/SQLBook/)
-* [SQLBook 2](https://www.syncfusion.com/ebooks/sql_queries_succinctly)
-
-##### Esercizi
-
-* [Hackerrank](https://www.hackerrank.com/domains/sql)
-
-***Consiglio: Un'occhiata alla sintassi e poi esercizi su hackerrank.***
-
-### Tools
-
-#### Liquibase
-
-Mantenere il database riproducibile e versionabile è sempre stato uno dei più grandi problemi di sempre, questo strumento risolve il problema.
-
-[Liquibase - get started](https://www.liquibase.org/get_started/how-lb-works.html)
-
-***Consiglio: l'importante è sapere che esiste e come funziona.***
+* [Hibernate quick start](https://docs.jboss.org/hibernate/orm/current/quickstart/html_single/)
+* [java tutorial point - hibernate tutorial](https://www.javatpoint.com/hibernate-tutorial)
 
 ---
 
