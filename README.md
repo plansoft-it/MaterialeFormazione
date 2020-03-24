@@ -26,6 +26,8 @@
     - [Linguaggi](#linguaggi-1)
       - [SQL](#sql)
         - [Esercizi](#esercizi-2)
+    - [Tools](#tools-1)
+      - [Liquibase](#liquibase)
   - [Front-end](#front-end)
     - [Linguaggi](#linguaggi-2)
       - [HTML](#html)
@@ -33,10 +35,12 @@
       - [JavaScript](#javascript)
         - [Esercizi](#esercizi-3)
       - [Typescript](#typescript)
-    - [Tools](#tools-1)
+    - [Tools](#tools-2)
       - [Node.js](#nodejs)
       - [Npm](#npm)
+      - [Webpack](#webpack)
     - [Framework](#framework-1)
+      - [Angular](#angular)
 
 </details>
 
@@ -286,6 +290,16 @@ Per eseguire le operazioni CRUD su un database è necessario un linguaggio.
 
 ***Consiglio: Un'occhiata alla sintassi e poi esercizi su hackerrank.***
 
+### Tools
+
+#### Liquibase
+
+Mantenere il database riproducibile e versionabile è sempre stato uno dei più grandi problemi di sempre, questo strumento risolve il problema.
+
+[Liquibase - get started](https://www.liquibase.org/get_started/how-lb-works.html)
+
+***Consiglio: l'importante è sapere che esiste e come funziona.***
+
 ---
 
 ## Front-end
@@ -347,7 +361,7 @@ Probabilmente il linguaggio attualmente più usato al mondo, Javascript è comun
 * [javascript-challenges-book](https://tcorral.github.io/javascript-challenges-book/autoexecute/README.html)
 * [Hackerrank](https://www.hackerrank.com/domains/tutorials/10-days-of-javascript)
 
-***Consiglio: ci sono molte curiosità interessanti attorno a questo linguaggio, a partire dal fatto che il linguaggio è stato pensato definito e creato nella sua prima versione in 9 giorni, fino al perchè gli sia stato affidato questo nome nonostante non ci siano grandi somiglianze.***
+***Consiglio: ci sono molte curiosità interessanti attorno a questo linguaggio, a partire dal fatto che il linguaggio è stato pensato definito e creato nella sua prima versione in 9 giorni, fino al perchè gli sia stato affidato questo nome nonostante non ci siano grandi somiglianze con il linguaggio java.***
 
 #### Typescript
 
@@ -368,6 +382,23 @@ TypeScript permette di non soffrire dal passaggio da linguaggi di programmazione
 
 #### Npm
 
+Potrebbe essere definito il similare di Maven per javascript, questo tool permette di gestire e creare moduli/pacchetti javascript oppure eseguire build node.
+
+[About npm](https://docs.npmjs.com/about-npm/)
+[Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+#### Webpack
+
+Per raccogliere e creare dei veri e propri bundle di tutta la parte frontend, viene usato webpack. Questo strumento prende i moduli di un progetto e relative dipendenze generando in output un boundle statico contentente tutto.
+
+[Webpack](https://webpack.js.org/)
+
 ### Framework
 
-* Angular: https://angular.io/start
+#### Angular
+
+Sicuramente uno dei framework javascript/typescript più completi e usati al mondo, si basa sul pattern architetturale [MVC](#mvc) e sul single-page applications. Il linguaggio usato è il [TypeScript](#typescript), è consigliato quindi conoscerne le basi.
+
+[Angular docs](https://angular.io/docs)
+
+***Consiglio: Angular è molto importante e lo sviluppo si basa principalmente su di esso, quindi farlo bene è necessario.***
