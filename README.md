@@ -1,5 +1,9 @@
 # Materiale Formazione
 
+<details><summary>Cliccami</summary>
+NB: Ogni volta che vedete la freccia cliccatela
+</details>
+
 <details><summary>Indice</summary>
 
 - [Materiale Formazione](#materiale-formazione)
