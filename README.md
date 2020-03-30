@@ -400,8 +400,8 @@ TypeScript permette di non soffrire dal passaggio da linguaggi di programmazione
 
 Potrebbe essere definito il similare di Maven per javascript, questo tool permette di gestire e creare moduli/pacchetti javascript oppure eseguire build node.
 
-[About npm](https://docs.npmjs.com/about-npm/)
-[Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+* [About npm](https://docs.npmjs.com/about-npm/)
+* [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 #### Webpack
 
