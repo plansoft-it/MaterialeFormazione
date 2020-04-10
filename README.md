@@ -368,6 +368,7 @@ Attualmente al posto di scrivere fogli stile classici in formato css, si preferi
 
 Probabilmente il linguaggio attualmente più usato al mondo, Javascript è comunemente usato per la programmazione lato web client trasformando le pagine statiche in dinamiche.
 
+* Impara javascript usando il terminale: [workshopper/javascripting](https://github.com/workshopper/javascripting)
 * Un qualsiasi video tutorial su youtube ([1](https://www.youtube.com/watch?v=PkZNo7MFNFg), [2](https://www.youtube.com/playlist?list=PLYrQFCVhfFIvLARCdl9q5WyPnfRBX4rUT)) o piattaforme come udemy o cursera, ma anche [solo learn](https://www.sololearn.com/Course/JavaScript/)
 * Una guida online su [developer mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [JavaScript for Cats](http://jsforcats.com/)
 * Libri 
