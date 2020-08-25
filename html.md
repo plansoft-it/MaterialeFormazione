@@ -135,5 +135,49 @@ h1 {
 }
 ```
 
-<!-- CSS Syntax -->
-<!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS -->
+Ogni regola deve selezionare un elemento HTML che deve modificare, ogni tag HTML può essere target di una regola. Gli elementi selezionati sono i selettori.
+
+Le modifiche sono implementate all'interno delle parentesi graffe {} in cui si definiscono coppie di prorietà/valore
+
+Nell'esempio precedente abbiamo creato la regola per cui il contenuto del tag h1 deve essere di colore rosso e avere una dimensione di 5 volte la dimensioni standard.
+
+Per collegare un css con una pagina html è necessario indicare nell'header la path del foglio di riferimento associato al tag **link**:
+
+```HTML
+<link rel="stylesheet" href="styles.css">
+```
+
+È possibile effettuare modifiche più complesse usando una sintassi di questo tipo
+
+```CSS
+s1 + s2 s3.class1 {
+    <rules>
+}
+```
+
+Il codice sopra citato significa applicare le rules definite al tag *s3* che ha come classe *class1* che è contenuto in *s2* che si trova dopo il tag *s1*.
+
+# Esempio CSS
+
+    1. Creare una pagina html con almeno: un titolo, un paragrafo con all'interno un elemento span e un link, un altro paragrafo con uno span e un enfasi (tag em), una lista di 3 elementi. Lo scheletro della pagina deve essere questo:
+    
+    ```HTML
+    <!DOCTYPE html>
+    <html lang="it">
+    
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+    </body>
+    
+    </html>
+    ```
+
+    2. Aprire la pagina con il browser
+    3. Creare un foglio di stile e linkarlo alla pagina appena creata. Il foglio deve impostare il colore rosso per il titolo, il verde per i paragrafi e le liste, la lista deve avere almeno uno stile modificato.
+    4. Aggiungere una classe chiamata **special** e generare una rule associata a questa classe, aggiungere questa classe a uno dei tag usati
+    5. Modificare lo stile dell'elemento **a**: se si trova nello stato iniziale (link) colorarlo di rosso, se si trova nello stato visitato colorarlo di verde con un font size raddoppiato, se si trova nello stato di passaggio del mouse (hover) creare una decorazione del testo a scelta.
+    6. Combinare 2 o più selettori in una regola: impostare il colore giallo allo span contenuto dal paragrafo che viene dopo il titolo
+
