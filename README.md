@@ -328,6 +328,8 @@ Tutto ciò che l'utente vede viene generalmente indicato con front-end, questa p
 
 #### HTML
 
+***<h6> [Vedi materiale html](html.md) </h6>***
+
 Questo è un linguaggio di tipo merkup (non è un linguaggio quindi di programmazione), serve per visualizzare graficamente contenuti testuali e non.
 
 * [learn X in Y minutes](https://learnxinyminutes.com/docs/html/)
