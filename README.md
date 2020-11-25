@@ -245,6 +245,8 @@ Si consiglia Java almeno alla versione 9.
 * Una guida online su [codecademy](https://www.codecademy.com/learn/learn-java/) o [learn x in y minutes](https://learnxinyminutes.com/docs/it-it/java-it/)
 * Libri 
 
+Avere una conoscenza dell'implementazione dei design pattern è necessaria, è possibile trovare spiegazione e implementazione di ogni design pattern a questo link [java-design-pattern](https://java-design-patterns.com/).
+
 <details><summary>Da sapere</summary>
 
 * I tipi primitivi
