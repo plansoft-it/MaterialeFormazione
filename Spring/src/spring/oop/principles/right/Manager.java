@@ -1,15 +1,24 @@
 package spring.oop.principles.right;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class Manager extends SuperEmployee<Boolean> {
+public class Manager extends Employee{
+
+	protected Map<Employee, Boolean> employees;
 	
-	public Manager(Employee employee) {
-		super(employee.getName(), employee.getSurname(), employee.getCompany());
+	public Manager(String name, String surname, Company company) {
+		super(name, surname, company);
+		this.employees = new HashMap<>();
 	}
 	
-	public boolean isPromotionAvailableThisYear(Employee employee) {
-		return this.getValue(employee);
+	public void addEmployee(Employee employee, Boolean value) {
+		employees.put(employee, value);
+	}
+	
+	public boolean getValue(Employee employee) {
+		return employees.get(employee);
 	}
 
 	public void setEmployee(List<Employee> employees, boolean promotion) {
@@ -17,6 +26,11 @@ public class Manager extends SuperEmployee<Boolean> {
 			this.employees.put(employee, promotion);
 		}
 	}
+
+	public boolean isPromotionAvailableThisYear(Employee employee) {
+		return this.getValue(employee);
+	}
+
 
 	@Override
 	public void doThings() {

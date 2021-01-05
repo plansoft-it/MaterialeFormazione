@@ -2,8 +2,8 @@ package spring.oop.principles.right;
 
 public class Administrator extends Employee {
 	
-	public Administrator(Employee employee) {
-		super(employee.getName(), employee.getSurname(), employee.getCompany());
+	public Administrator(String name, String surname, Company company) {
+		super(name, surname, company);
 	}
 
 	public int getSalary(Employee employee) {
