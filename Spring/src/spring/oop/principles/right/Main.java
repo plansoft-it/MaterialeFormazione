@@ -12,23 +12,10 @@ public class Main {
 		company.setManager(company.getEmployees().get(1));
 		company.getManager().setEmployee(company.getEmployees(), false);
 		
-		for (Employee employee : company.getEmployees()) {
-			System.out.println("Dipendente: " + employee.getName() + employee.getSurname());
-			System.out.println("Salario: " + company.getAdministrator().getSalary(employee));
-			System.out.println("Promozione: " + company.getManager().isPromotionAvailableThisYear(employee));
-			System.out.println("");
-		}
+		company.getEmployeeStatus();
+		company.letEmployeeWork();
+		company.getEmployeeStatus();
 		
-		for (Employee employee : company.getEmployees()) {
-			employee.doThings();
-		}
-		
-		for (Employee employee : company.getEmployees()) {
-			System.out.println("Dipendente: " + employee.getName() + employee.getSurname());
-			System.out.println("Salario: " + company.getAdministrator().getSalary(employee));
-			System.out.println("Promozione: " + company.getManager().isPromotionAvailableThisYear(employee));
-			System.out.println("");
-		}
 	}
 
 }

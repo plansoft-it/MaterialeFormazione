@@ -51,4 +51,19 @@ public class Company {
 		this.timeBank.addEmployee(employee);
 	}
 	
+	public void letEmployeeWork() {
+		for (Employee employee : getEmployees()) {
+			employee.doThings();
+		}	
+	}
+	
+	public void getEmployeeStatus() {
+		for (Employee employee : getEmployees()) {
+			System.out.println("Dipendente: " + employee.getName() + employee.getSurname());
+			System.out.println("Salario: " + getAdministrator().getSalary(employee));
+			System.out.println("Promozione: " + getManager().isPromotionAvailableThisYear(employee));
+			System.out.println("");
+		}
+	}
+	
 }
