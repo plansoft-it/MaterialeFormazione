@@ -1,4 +1,4 @@
-package spring.oop.principles.right;
+package spring.oop.principles.right.version1;
 
 import java.util.HashMap;
 import java.util.Map;

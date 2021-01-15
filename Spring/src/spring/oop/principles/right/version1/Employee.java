@@ -1,4 +1,4 @@
-package spring.oop.principles.right;
+package spring.oop.principles.right.version1;
 
 public class Employee implements Person {
 	

@@ -1,4 +1,4 @@
-package spring.oop.principles.right;
+package spring.oop.principles.right.version1;
 
 public class Main {
 
@@ -15,7 +15,6 @@ public class Main {
 		company.getEmployeeStatus();
 		company.letEmployeeWork();
 		company.getEmployeeStatus();
-		
 	}
 
 }
