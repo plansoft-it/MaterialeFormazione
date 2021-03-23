@@ -1,0 +1,20 @@
+h1 {
+    color: red;
+}
+
+h1 + strong {
+    color: blue;
+}
+
+h1 strong {
+    color: green;
+}
+
+strong.test {
+    color: yellow;
+}
+
+div.test1, div + a.test {
+    font-size: 4em;
+}
+

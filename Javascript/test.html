@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Titolo</title>
+    </head>
+
+    <body>
+        <h1>Titolo</h1>
+
+        <form name="selectForm">
+            <p>
+                <label for='musicTypes'>Scegli una stile di musica</label>
+                <select id='musicTypes' name="musicTypes" multiple="multiple">
+                    <option selected="selected">Rock</option>
+                    <option >Jazz</option>
+                    <option >Soul</option>
+                    <option >Pop</option>
+                    <option >Classical</option>
+                </select>
+            </p>
+            <p>
+                <input id="btn" type="button" value="Quanti stili sono selezionati"/>
+            </p>
+        </form>
+
+        <script>
+
+            function counterSelection(selectedObj) {
+                let counter = 0;
+                for(let i=0 ; i < selectedObj.options.length; i++){
+                    if(selectedObj.options[i].selected) {
+                        counter++;
+                    }
+                }
+                return counter;
+            }
+
+            let btn = document.getElementById('btn');
+
+                        btn.addEventListener('click', () => {
+                alert("Il numero di elementi selezionati è: " + counterSelection(document.selectForm.musicTypes));
+            });
+        </script>
+
+    </body>
+</html>

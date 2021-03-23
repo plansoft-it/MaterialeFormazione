@@ -1,7 +1,22 @@
 
-h1 + p span em.special {
-    color: navy;
-    background-color: aqua;
-    padding: 1em;
+a {
+    color: grey;
+}
+
+div ol {
+    padding: 10em;
+}
+
+div ol li {
+    font-size: 5em;
+}
+
+li.first {
+    color: teal; 
+}
+
+li.second {
+    color: lime;
+    background: red;
 }
 

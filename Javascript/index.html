@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title>Esempio: Pagina 1</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>
+            Esempio Pagina 1 <strong> questo è verde</strong>
+        </h1> 
+
+        <strong>Questo invece blue</strong>
+
+        questo è un colore standard
+
+        <strong class="test">Questo dovrebbe essere giallo</strong>
+
+        <strong>Questo è un colore standard</strong>
+
+        <div class="test1">Questo dovrebbe essere un po' più grande</div>
+
+        <a href="pagina2.html"> Questo link è viene dopo un div, ma non è della classe test</a>
+
+        <div>
+            Questo è un div normale
+        </div>
+
+        <a class="test" href="pagina2.html"> Questo link è viene dopo un div ed è della classe test</a>
+
+        <form action="pagina2.html">
+            <button type="submit"></button>
+        </form>
+
+        <img src="https://ampet1.com/wp-content/uploads/2017/09/gilbarco-fuel-dispenser.jpg"/>
+
+        <form name="selectForm">
+            <p>
+            <label for="musicTypes">Choose some music types, then click the button below:</label>
+            <select id="musicTypes" name="musicTypes" multiple="multiple">
+                <option selected="selected">R&B</option>
+                <option>Jazz</option>
+                <option>Blues</option>
+                <option>New Age</option>
+                <option>Classical</option>
+                <option>Opera</option>
+            </select>
+            </p>
+            <p><input id="btn" type="button" value="How many are selected?" /></p>
+        </form>
+
+        <script>
+            function howMany(selectObject) {
+                            let numberSelected = 0;
+                            for (let i = 0; i < selectObject.options.length; i++) {
+                                            if (selectObject.options[i].selected) {
+                                                            numberSelected++;
+                                                        }
+                                        }
+                            return numberSelected;
+                        }
+
+                        let btn = document.getElementById('btn');
+                        btn.addEventListener('click', function() {
+                                        alert('Number of options selected: ' + howMany(document.selectForm.musicTypes));
+                                    });
+        </script>
+
+    </body>
+
+</html>
