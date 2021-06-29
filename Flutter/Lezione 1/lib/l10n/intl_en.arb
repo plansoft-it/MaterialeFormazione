@@ -1,0 +1,15 @@
+{
+  "app_name" : "Applicazione 1 en",
+  "drawer_link_01": "Home Page",
+  "link_2": "TEST",
+  "dashboard": "Dashboard",
+  "dashboard_button": "CLICK ME",
+  "setting_language" : "Select yout language",
+  "should_be_a_valid_email": "should_be_a_valid_email",
+  "email": "email",
+  "should_be_more_than_3_characters": "should_be_more_than_3_characters",
+  "password": "password",
+  "login": "login",
+  "must_be_email_address": "must_be_email_address",
+  "confirm_password": "Conferma Password"
+}
