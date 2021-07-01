@@ -1,0 +1,4 @@
+
+class MyPhotoLibrary {
+  String image;
+}
