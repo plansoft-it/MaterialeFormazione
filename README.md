@@ -392,6 +392,7 @@ TypeScript permette di non soffrire dal passaggio da linguaggi di programmazione
 
 * [Guida ufficiale ](https://www.typescriptlang.org/docs/home.html)
 * [Guida in italiano - non completa](https://github.com/Wabri/LearningTypescript/blob/master/README.md)
+* [The Concise TypeScript Book (edizione italiana)](https://gibbok.github.io/typescript-book/it-it/) - Guida gratuita e open source in italiano
 
 ### Tools
 
